@@ -93,6 +93,15 @@ if (cell) {
   csvArray.push(row);
 }
 
-console.log(csvArray);
+const headers = csvArray[0].map(header => header.toLocaleLowerCase());
+const resultArray = [];
 
-console.log("Number of columns:", numColumns);
+for (let i = 1; i < csvArray.length; i++) {
+    let rowObject = {};
+    for (let j = 0; j < csvArray[i].length; j++) {
+        rowObject[headers[j]] = csvArray[i][j];
+    }
+    resultArray.push(rowObject);
+}
+
+console.log(resultArray);
