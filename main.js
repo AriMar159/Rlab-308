@@ -9,12 +9,14 @@ countto100();
 // If a number is divisible by 3, log “Fizz.”\
 function divisibleby3(){
     for (let i = 1; i <= 100; i++){
-        if (i % 3 === 0)
-    } 
+        if (i % 3 === 0) {
+
 console.log("Fizz");
 } else {
-    console.log(i)
+    console.log(i);
    }
+  }
+}
 
 // If a number is divisible by 5, log “Buzz.”
 for (let i = 1; i <= 100; i++)  {
