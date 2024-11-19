@@ -104,4 +104,6 @@ for (let i = 1; i < csvArray.length; i++) {
     resultArray.push(rowObject);
 }
 
+resultArray.pop();
+
 console.log(resultArray);
