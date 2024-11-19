@@ -105,5 +105,7 @@ for (let i = 1; i < csvArray.length; i++) {
 }
 
 resultArray.pop();
+const newOject = { id:"48", name: "Barry", occupation: "Runner", age:"25" };
+resultArray.splice(1, 0, newOject);
 
 console.log(resultArray);
