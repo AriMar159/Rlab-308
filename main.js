@@ -110,4 +110,14 @@ resultArray.splice(1, 0, newObject);
 let newObject2 = { id: "7", name:"Bilbo", occupation: "None", age:"111"}
 Array.push(newObject2);
 
+let totalAge = 0
+let totalPeople = resultArray.length;
+
+for( let i = 0; i < totalPeople; i++) {
+    totalAge += parseInt(resultArray[i].age);
+}
+
+let averageAge = totalAge / totalPeople;
+
+console.log("The average age is:", averageAge)
 console.log(resultArray);
